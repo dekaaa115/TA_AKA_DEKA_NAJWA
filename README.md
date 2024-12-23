@@ -1,4 +1,4 @@
-# Repository Tugas Akhir Analisis Kompleksitas Algoritma
+# Repository Tugas Akhir "Analisis Kompleksitas Algoritma"
 
 ### Nama Anggota Kelompok :
 - Muhammad Deka Maulana        NIM : 2311102148
