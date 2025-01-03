@@ -1,12 +1,12 @@
 # Tugas Akhir: Analisis Kompleksitas Algoritma
 
-## Anggota:
+## Anggota Kelompok :
 - **Muhammad Deka Maulana** (2311102148)
 - **Najwa Humairah** (2311102134)
 
 ---
 
-## Perbandingan Waktu Eksekusi Insertion Sort (Iteratif vs Rekursif)
+## Perbandingan Waktu Eksekusi Linear Search (Iteratif vs Rekursif)
 
 Proyek ini membandingkan waktu eksekusi antara dua implementasi algoritma Linear Search, yaitu versi iteratif dan rekursif. Pengguna dapat memasukkan ukuran input (n) dan kriteria pencarian, serta melihat perbandingan waktu eksekusi dan hasil pencarian dalam bentuk tabel dan grafik.
 
@@ -44,63 +44,65 @@ def linear_search_recursive(arr, n, key, value, result=None):
 ```plaintext
 Run 1 - Masukkan kriteria pencarian:
 Masukkan kriteria (title/author/category): title
-Masukkan title yang ingin dicari: 1984
+Masukkan title yang ingin dicari: The Great Gatsby
 Masukkan jumlah buku yang akan dicari (n): 5
 
-Hasil Pencarian (Iterative): [{'id': 102, 'title': '1984', 'author': 'George Orwell', 'category': 'Dystopian'}]
-Hasil Pencarian (Recursive): [{'id': 102, 'title': '1984', 'author': 'George Orwell', 'category': 'Dystopian'}]
+Hasil Pencarian (Iterative): [{'id': 101, 'title': 'The Great Gatsby', 'author': 'F. Scott Fitzgerald', 'category': 'Fiction'}]
+Hasil Pencarian (Recursive): [{'id': 101, 'title': 'The Great Gatsby', 'author': 'F. Scott Fitzgerald', 'category': 'Fiction'}]
  n  Recursive Time (s)  Iterative Time (s)
- 5            0.000006            0.000033
+ 5            0.000005            0.000017
 
 Run 2 - Masukkan kriteria pencarian:
 Masukkan kriteria (title/author/category): title
-Masukkan title yang ingin dicari: The Great Gatsby
+Masukkan title yang ingin dicari: 1984
 Masukkan jumlah buku yang akan dicari (n): 10
 
-Hasil Pencarian (Iterative): [{'id': 101, 'title': 'The Great Gatsby', 'author': 'F. Scott Fitzgerald', 'category': 'Fiction'}, {'id': 101, 'title': 'The Great Gatsby', 'author': 'F. Scott Fitzgerald', 'category': 'Fiction'}]
-Hasil Pencarian (Recursive): [{'id': 101, 'title': 'The Great Gatsby', 'author': 'F. Scott Fitzgerald', 'category': 'Fiction'}, {'id': 101, 'title': 'The Great Gatsby', 'author': 'F. Scott Fitzgerald', 'category': 'Fiction'}]
+Hasil Pencarian (Iterative): [{'id': 102, 'title': '1984', 'author': 'George Orwell', 'category': 'Dystopian'}, {'id': 102, 'title': '1984', 'author': 'George Orwell', 'category': 'Dystopian'}]
+Hasil Pencarian (Recursive): [{'id': 102, 'title': '1984', 'author': 'George Orwell', 'category': 'Dystopian'}, {'id': 102, 'title': '1984', 'author': 'George Orwell', 'category': 'Dystopian'}]
  n  Recursive Time (s)  Iterative Time (s)
- 5            0.000006            0.000033
-10            0.000005            0.000010
+ 5            0.000005            0.000017
+10            0.000008            0.000011
 
 Run 3 - Masukkan kriteria pencarian:
-Masukkan kriteria (title/author/category): author
-Masukkan author yang ingin dicari: Tara Westover
+Masukkan kriteria (title/author/category): title                  
+Masukkan title yang ingin dicari: To Kill a Mockingbird
 Masukkan jumlah buku yang akan dicari (n): 15
 
-Hasil Pencarian (Iterative): [{'id': 106, 'title': 'Educated', 'author': 'Tara Westover', 'category': 'Memoir'}, {'id': 106, 'title': 'Educated', 'author': 'Tara Westover', 'category': 'Memoir'}]
-Hasil Pencarian (Recursive): [{'id': 106, 'title': 'Educated', 'author': 'Tara Westover', 'category': 'Memoir'}, {'id': 106, 'title': 'Educated', 'author': 'Tara Westover', 'category': 'Memoir'}]
+Hasil Pencarian (Iterative): [{'id': 103, 'title': 'To Kill a Mockingbird', 'author': 'Harper Lee', 'category': 'Fiction'}, {'id': 103, 'title': 'To Kill a Mockingbird', 'author': 'Harper Lee', 'category': 'Fiction'}]
+Hasil Pencarian (Recursive): [{'id': 103, 'title': 'To Kill a Mockingbird', 'author': 'Harper Lee', 'category': 'Fiction'}, {'id': 103, 'title': 'To Kill a Mockingbird', 'author': 'Harper Lee', 'category': 'Fiction'}]
  n  Recursive Time (s)  Iterative Time (s)
- 5            0.000006            0.000033
-10            0.000005            0.000010
-15            0.000025            0.000009
+ 5            0.000005            0.000017
+10            0.000008            0.000011
+15            0.000006            0.000011
 
 Run 4 - Masukkan kriteria pencarian:
-Masukkan kriteria (title/author/category): author
-Masukkan author yang ingin dicari: F. Scott Fitzgerald
+Masukkan kriteria (title/author/category): title
+Masukkan title yang ingin dicari: The Catcher in the Rye
 Masukkan jumlah buku yang akan dicari (n): 20
 
-Hasil Pencarian (Iterative): [{'id': 101, 'title': 'The Great Gatsby', 'author': 'F. Scott Fitzgerald', 'category': 'Fiction'}, {'id': 101, 'title': 'The Great Gatsby', 'author': 'F. Scott Fitzgerald', 'category': 'Fiction'}, {'id': 101, 'title': 'The Great Gatsby', 'author': 'F. Scott Fitzgerald', 'category': 'Fiction'}]
-Hasil Pencarian (Recursive): [{'id': 101, 'title': 'The Great Gatsby', 'author': 'F. Scott Fitzgerald', 'category': 'Fiction'}, {'id': 101, 'title': 'The Great Gatsby', 'author': 'F. Scott Fitzgerald', 'category': 'Fiction'}, {'id': 101, 'title': 'The Great Gatsby', 'author': 'F. Scott Fitzgerald', 'category': 'Fiction'}]
+Hasil Pencarian (Iterative): [{'id': 104, 'title': 'The Catcher in the Rye', 'author': 'J.D. Salinger', 'category': 'Fiction'}, {'id': 104, 'title': 'The Catcher in the Rye', 'author': 'J.D. Salinger', 'category': 'Fiction'}, {'id': 104, 'title': 'The Catcher in the Rye', 'author': 'J.D. Salinger', 'category': 'Fiction'}]
+Hasil Pencarian (Recursive): [{'id': 104, 'title': 'The Catcher in the Rye', 'author': 'J.D. Salinger', 'category': 'Fiction'}, {'id': 104, 'title': 'The Catcher in the Rye', 'author': 'J.D. Salinger', 'category': 'Fiction'}, {'id': 104, 'title': 'The Catcher in the Rye', 'author': 'J.D. Salinger', 'category': 'Fiction'}]
  n  Recursive Time (s)  Iterative Time (s)
- 5            0.000006            0.000033
-10            0.000005            0.000010
-15            0.000025            0.000009
-20            0.000008            0.000008
+ 5            0.000005            0.000017
+10            0.000008            0.000011
+15            0.000006            0.000011
+20            0.000011            0.000014
 
 Run 5 - Masukkan kriteria pencarian:
-Masukkan kriteria (title/author/category): category
-Masukkan category yang ingin dicari: History
+Masukkan kriteria (title/author/category): title
+Masukkan title yang ingin dicari: Sapiens
 Masukkan jumlah buku yang akan dicari (n): 25
 
 Hasil Pencarian (Iterative): [{'id': 105, 'title': 'Sapiens', 'author': 'Yuval Noah Harari', 'category': 'History'}, {'id': 105, 'title': 'Sapiens', 'author': 'Yuval Noah Harari', 'category': 'History'}, {'id': 105, 'title': 'Sapiens', 'author': 'Yuval Noah Harari', 'category': 'History'}]
 Hasil Pencarian (Recursive): [{'id': 105, 'title': 'Sapiens', 'author': 'Yuval Noah Harari', 'category': 'History'}, {'id': 105, 'title': 'Sapiens', 'author': 'Yuval Noah Harari', 'category': 'History'}, {'id': 105, 'title': 'Sapiens', 'author': 'Yuval Noah Harari', 'category': 'History'}]
  n  Recursive Time (s)  Iterative Time (s)
- 5            0.000006            0.000033
-10            0.000005            0.000010
-15            0.000025            0.000009
-20            0.000008            0.000008
-25            0.000008            0.000009
+ 5            0.000005            0.000017
+10            0.000008            0.000011
+15            0.000006            0.000011
+20            0.000011            0.000014
+25            0.000011            0.000011
+
+Program selesai!
 ```
 
 ### Output Grafik
